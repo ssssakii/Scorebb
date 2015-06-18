@@ -13,6 +13,21 @@
 		846A0CEC1B300BA7001C981F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846A0CEB1B300BA7001C981F /* Images.xcassets */; };
 		846A0CEF1B300BA7001C981F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846A0CED1B300BA7001C981F /* LaunchScreen.xib */; };
 		846A0CFB1B300BA8001C981F /* ScorebbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A0CFA1B300BA8001C981F /* ScorebbTests.swift */; };
+		8488471A1B32378C0048C5D2 /* スコアボード1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 848847191B32378C0048C5D2 /* スコアボード1.jpg */; };
+		8488471C1B3237990048C5D2 /* 球場1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8488471B1B3237990048C5D2 /* 球場1.jpg */; };
+		8488471E1B3240180048C5D2 /* ボール2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488471D1B3240180048C5D2 /* ボール2.png */; };
+		848847201B3257DB0048C5D2 /* font.php.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488471F1B3257DB0048C5D2 /* font.php.png */; };
+		84AFAE631B32C5CE0009E99C /* scorenyuuryoku.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE621B32C5CE0009E99C /* scorenyuuryoku.png */; };
+		84AFAE651B32C9500009E99C /* sensyurogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE641B32C9500009E99C /* sensyurogo.png */; };
+		84AFAE671B32CA300009E99C /* kakono.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE661B32CA300009E99C /* kakono.png */; };
+		84AFAE691B32CEA40009E99C /* grove.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE681B32CEA40009E99C /* grove.gif */; };
+		84AFAE711B32DA3B0009E99C /* rainappu_rogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */; };
+		84AFAE731B32DEE40009E99C /* rainappu2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE721B32DEE40009E99C /* rainappu2.png */; };
+		84F2FAF11B32861E006B257A /* scoreboard2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF01B32861E006B257A /* scoreboard2.png */; };
+		84F2FAF31B32B00E006B257A /* Baseball1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF21B32B00E006B257A /* Baseball1.png */; };
+		84F2FAF51B32B2DF006B257A /* Score.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF41B32B2DF006B257A /* Score.png */; };
+		84F2FAF71B32B33E006B257A /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF61B32B33E006B257A /* Book.png */; };
+		84F2FAFD1B32B900006B257A /* you3.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAFC1B32B900006B257A /* you3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +51,21 @@
 		846A0CF41B300BA7001C981F /* ScorebbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScorebbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		846A0CF91B300BA8001C981F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846A0CFA1B300BA8001C981F /* ScorebbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorebbTests.swift; sourceTree = "<group>"; };
+		848847191B32378C0048C5D2 /* スコアボード1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "スコアボード1.jpg"; sourceTree = "<group>"; };
+		8488471B1B3237990048C5D2 /* 球場1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "球場1.jpg"; sourceTree = "<group>"; };
+		8488471D1B3240180048C5D2 /* ボール2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボール2.png"; sourceTree = "<group>"; };
+		8488471F1B3257DB0048C5D2 /* font.php.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font.php.png; sourceTree = "<group>"; };
+		84AFAE621B32C5CE0009E99C /* scorenyuuryoku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scorenyuuryoku.png; sourceTree = "<group>"; };
+		84AFAE641B32C9500009E99C /* sensyurogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sensyurogo.png; sourceTree = "<group>"; };
+		84AFAE661B32CA300009E99C /* kakono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kakono.png; sourceTree = "<group>"; };
+		84AFAE681B32CEA40009E99C /* grove.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grove.gif; sourceTree = "<group>"; };
+		84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainappu_rogo.png; sourceTree = "<group>"; };
+		84AFAE721B32DEE40009E99C /* rainappu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainappu2.png; sourceTree = "<group>"; };
+		84F2FAF01B32861E006B257A /* scoreboard2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreboard2.png; sourceTree = "<group>"; };
+		84F2FAF21B32B00E006B257A /* Baseball1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Baseball1.png; sourceTree = "<group>"; };
+		84F2FAF41B32B2DF006B257A /* Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Score.png; sourceTree = "<group>"; };
+		84F2FAF61B32B33E006B257A /* Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Book.png; sourceTree = "<group>"; };
+		84F2FAFC1B32B900006B257A /* you3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = you3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +110,21 @@
 				846A0CE41B300BA7001C981F /* AppDelegate.swift */,
 				846A0CE61B300BA7001C981F /* ViewController.swift */,
 				846A0CE81B300BA7001C981F /* Main.storyboard */,
+				84AFAE721B32DEE40009E99C /* rainappu2.png */,
+				84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */,
+				84AFAE681B32CEA40009E99C /* grove.gif */,
+				84AFAE661B32CA300009E99C /* kakono.png */,
+				84AFAE641B32C9500009E99C /* sensyurogo.png */,
+				84AFAE621B32C5CE0009E99C /* scorenyuuryoku.png */,
+				84F2FAFC1B32B900006B257A /* you3.png */,
+				84F2FAF61B32B33E006B257A /* Book.png */,
+				84F2FAF41B32B2DF006B257A /* Score.png */,
+				84F2FAF21B32B00E006B257A /* Baseball1.png */,
+				84F2FAF01B32861E006B257A /* scoreboard2.png */,
+				8488471F1B3257DB0048C5D2 /* font.php.png */,
+				8488471D1B3240180048C5D2 /* ボール2.png */,
+				8488471B1B3237990048C5D2 /* 球場1.jpg */,
+				848847191B32378C0048C5D2 /* スコアボード1.jpg */,
 				846A0CEB1B300BA7001C981F /* Images.xcassets */,
 				846A0CED1B300BA7001C981F /* LaunchScreen.xib */,
 				846A0CE21B300BA7001C981F /* Supporting Files */,
@@ -192,9 +237,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AFAE711B32DA3B0009E99C /* rainappu_rogo.png in Resources */,
+				84AFAE691B32CEA40009E99C /* grove.gif in Resources */,
+				84F2FAF51B32B2DF006B257A /* Score.png in Resources */,
+				84F2FAF11B32861E006B257A /* scoreboard2.png in Resources */,
+				84F2FAF31B32B00E006B257A /* Baseball1.png in Resources */,
+				848847201B3257DB0048C5D2 /* font.php.png in Resources */,
+				8488471A1B32378C0048C5D2 /* スコアボード1.jpg in Resources */,
 				846A0CEA1B300BA7001C981F /* Main.storyboard in Resources */,
+				8488471C1B3237990048C5D2 /* 球場1.jpg in Resources */,
+				84AFAE671B32CA300009E99C /* kakono.png in Resources */,
 				846A0CEF1B300BA7001C981F /* LaunchScreen.xib in Resources */,
+				84AFAE631B32C5CE0009E99C /* scorenyuuryoku.png in Resources */,
+				84AFAE731B32DEE40009E99C /* rainappu2.png in Resources */,
+				84AFAE651B32C9500009E99C /* sensyurogo.png in Resources */,
 				846A0CEC1B300BA7001C981F /* Images.xcassets in Resources */,
+				8488471E1B3240180048C5D2 /* ボール2.png in Resources */,
+				84F2FAF71B32B33E006B257A /* Book.png in Resources */,
+				84F2FAFD1B32B900006B257A /* you3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +469,7 @@
 				846A0D001B300BA8001C981F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		846A0D011B300BA8001C981F /* Build configuration list for PBXNativeTarget "ScorebbTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +478,7 @@
 				846A0D031B300BA8001C981F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
