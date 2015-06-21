@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="223.5" y="292.5"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="4xW-Wm-78k">
             <objects>
-                <viewController id="nuS-Rs-LLZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="View2" id="nuS-Rs-LLZ" customClass="ViewController2" customModule="Scorebb" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mgh-AK-0Z0"/>
                         <viewControllerLayoutGuide type="bottom" id="99H-AL-bE9"/>
@@ -114,10 +114,10 @@
                                 </textAttributes>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scorenyuuryoku.png" translatesAutoresizingMaskIntoConstraints="NO" id="MnU-x5-7QU">
-                                <rect key="frame" x="77" y="-85" width="572" height="437"/>
+                                <rect key="frame" x="75" y="-85" width="574" height="436"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scoreboard2.png" translatesAutoresizingMaskIntoConstraints="NO" id="dwg-yW-3By">
-                                <rect key="frame" x="-11" y="375" width="410" height="292"/>
+                                <rect key="frame" x="-19" y="354" width="426" height="318"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRp-hW-UZm">
                                 <rect key="frame" x="6" y="-6" width="30" height="50"/>
@@ -137,12 +137,31 @@
                                 </date>
                             </datePicker>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Amb-rk-7LY">
-                                <rect key="frame" x="63" y="535" width="303" height="80"/>
+                                <rect key="frame" x="38" y="214" width="288" height="73"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="enter1:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="vYg-4q-zMz"/>
+                                    <action selector="loadButton1:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="VvW-O5-X53"/>
+                                    <action selector="saveButton1:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="R74-Kz-Ii3"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISt-2V-PFx">
-                                <rect key="frame" x="37" y="237" width="275" height="63"/>
+                                <rect key="frame" x="16" y="377" width="256" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="svU-Oy-3v2">
+                                <rect key="frame" x="21" y="321" width="338" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="enter2:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="uvf-87-4At"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG7-ZM-8br">
+                                <rect key="frame" x="173" y="406" width="120" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -153,10 +172,16 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label1" destination="ISt-2V-PFx" id="O8t-pi-ecy"/>
+                        <outlet property="label2" destination="nG7-ZM-8br" id="tqw-Iv-j5q"/>
+                        <outlet property="textfield1" destination="Amb-rk-7LY" id="ncG-9E-Z8F"/>
+                        <outlet property="textfield2" destination="svU-Oy-3v2" id="uGV-8G-y44"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJG-qK-w1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773.5" y="269.5"/>
+            <point key="canvasLocation" x="811.5" y="223.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bSv-LM-I6L">
