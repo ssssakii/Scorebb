@@ -14,6 +14,7 @@
 		846A0CEF1B300BA7001C981F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846A0CED1B300BA7001C981F /* LaunchScreen.xib */; };
 		846A0CFB1B300BA8001C981F /* ScorebbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A0CFA1B300BA8001C981F /* ScorebbTests.swift */; };
 		848545F31B36593B00148547 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848545F21B36593B00148547 /* ViewController2.swift */; };
+		848545F51B36FBCC00148547 /* UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848545F41B36FBCC00148547 /* UIDatePicker.swift */; };
 		8488471A1B32378C0048C5D2 /* スコアボード1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 848847191B32378C0048C5D2 /* スコアボード1.jpg */; };
 		8488471C1B3237990048C5D2 /* 球場1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8488471B1B3237990048C5D2 /* 球場1.jpg */; };
 		8488471E1B3240180048C5D2 /* ボール2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488471D1B3240180048C5D2 /* ボール2.png */; };
@@ -53,6 +54,7 @@
 		846A0CF91B300BA8001C981F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846A0CFA1B300BA8001C981F /* ScorebbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorebbTests.swift; sourceTree = "<group>"; };
 		848545F21B36593B00148547 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		848545F41B36FBCC00148547 /* UIDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDatePicker.swift; sourceTree = SOURCE_ROOT; };
 		848847191B32378C0048C5D2 /* スコアボード1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "スコアボード1.jpg"; sourceTree = "<group>"; };
 		8488471B1B3237990048C5D2 /* 球場1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "球場1.jpg"; sourceTree = "<group>"; };
 		8488471D1B3240180048C5D2 /* ボール2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボール2.png"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				846A0CE41B300BA7001C981F /* AppDelegate.swift */,
 				846A0CE61B300BA7001C981F /* ViewController.swift */,
 				848545F21B36593B00148547 /* ViewController2.swift */,
+				848545F41B36FBCC00148547 /* UIDatePicker.swift */,
 				846A0CE81B300BA7001C981F /* Main.storyboard */,
 				84AFAE721B32DEE40009E99C /* rainappu2.png */,
 				84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */,
@@ -278,6 +281,7 @@
 				846A0CE71B300BA7001C981F /* ViewController.swift in Sources */,
 				848545F31B36593B00148547 /* ViewController2.swift in Sources */,
 				846A0CE51B300BA7001C981F /* AppDelegate.swift in Sources */,
+				848545F51B36FBCC00148547 /* UIDatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

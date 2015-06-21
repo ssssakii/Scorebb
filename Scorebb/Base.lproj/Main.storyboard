@@ -130,20 +130,14 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" id="N9g-f0-c4J"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="slj-ut-FHx">
-                                <rect key="frame" x="0.0" y="44" width="375" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="456315436.68100899">
-                                    <!--2015-06-18 10:17:16 +0000-->
-                                </date>
-                            </datePicker>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Amb-rk-7LY">
                                 <rect key="frame" x="38" y="214" width="288" height="73"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="enter1:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="vYg-4q-zMz"/>
-                                    <action selector="loadButton1:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="VvW-O5-X53"/>
-                                    <action selector="saveButton1:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="R74-Kz-Ii3"/>
+                                    <action selector="loadButton1:" destination="nuS-Rs-LLZ" eventType="editingDidEnd" id="Vhr-Rm-zr6"/>
+                                    <action selector="saveButton1:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="wbT-qv-UUn"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISt-2V-PFx">
@@ -166,6 +160,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rNb-iX-ty8" customClass="UIDatePickerTextField" customModule="Scorebb" customModuleProvider="target">
+                                <rect key="frame" x="12" y="52" width="347" height="128"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CUb-NU-Zcd">
+                                <rect key="frame" x="82" y="440" width="57" height="75"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -182,6 +184,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJG-qK-w1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="811.5" y="223.5"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="4Oe-b1-CKN">
+            <objects>
+                <viewController id="FYt-yR-P6W" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JoO-7h-2nb"/>
+                        <viewControllerLayoutGuide type="bottom" id="YAA-2P-Uak"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hq3-oD-0b0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="DES-G5-lza"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3r-gp-Uqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100.5" y="838.5"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="nCp-xh-vFJ">
+            <objects>
+                <viewController id="bfH-OM-vL6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1IO-QH-Wuj"/>
+                        <viewControllerLayoutGuide type="bottom" id="TSL-fQ-3lc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qie-la-suN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="mLk-7g-S4t"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHY-2P-Gge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100.5" y="176.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bSv-LM-I6L">
