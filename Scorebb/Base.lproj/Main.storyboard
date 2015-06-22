@@ -135,7 +135,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="enter1:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="vYg-4q-zMz"/>
+                                    <action selector="enter1:" destination="nuS-Rs-LLZ" eventType="editingChanged" id="zt2-VX-tPn"/>
                                     <action selector="loadButton1:" destination="nuS-Rs-LLZ" eventType="editingDidEnd" id="Vhr-Rm-zr6"/>
                                     <action selector="saveButton1:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="wbT-qv-UUn"/>
                                 </connections>
@@ -143,21 +143,21 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISt-2V-PFx">
                                 <rect key="frame" x="16" y="377" width="256" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="svU-Oy-3v2">
-                                <rect key="frame" x="21" y="321" width="338" height="30"/>
+                                <rect key="frame" x="96" y="194" width="338" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="enter2:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="uvf-87-4At"/>
+                                    <action selector="enter2:" destination="nuS-Rs-LLZ" eventType="editingChanged" id="GEm-vR-ULN"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG7-ZM-8br">
-                                <rect key="frame" x="173" y="406" width="120" height="21"/>
+                                <rect key="frame" x="218" y="395" width="120" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rNb-iX-ty8" customClass="UIDatePickerTextField" customModule="Scorebb" customModuleProvider="target">
@@ -168,6 +168,21 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CUb-NU-Zcd">
                                 <rect key="frame" x="82" y="440" width="57" height="75"/>
                             </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="大会名・試合名" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfP-Cq-6Xw">
+                                <rect key="frame" x="22" y="162" width="119" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="後攻チーム名" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nTZ-zg-QDC">
+                                <rect key="frame" x="22" y="226" width="105" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="先攻チーム名" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKA-Ka-SDr">
+                                <rect key="frame" x="22" y="194" width="330" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -175,7 +190,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="label1" destination="ISt-2V-PFx" id="O8t-pi-ecy"/>
+                        <outlet property="label1" destination="ISt-2V-PFx" id="wa8-C6-G5x"/>
                         <outlet property="label2" destination="nG7-ZM-8br" id="tqw-Iv-j5q"/>
                         <outlet property="textfield1" destination="Amb-rk-7LY" id="ncG-9E-Z8F"/>
                         <outlet property="textfield2" destination="svU-Oy-3v2" id="uGV-8G-y44"/>
