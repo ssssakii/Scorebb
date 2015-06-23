@@ -25,7 +25,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nuS-Rs-LLZ" kind="show" id="c7H-bz-p10"/>
+                                    <segue destination="nuS-Rs-LLZ" kind="show" id="S5O-WA-tpP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFs-33-I7p">
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="223.5" y="292.5"/>
+            <point key="canvasLocation" x="83.5" y="121.5"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="4xW-Wm-78k">
@@ -130,46 +130,30 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" id="N9g-f0-c4J"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Amb-rk-7LY">
-                                <rect key="frame" x="38" y="214" width="288" height="73"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="enter1:" destination="nuS-Rs-LLZ" eventType="editingChanged" id="zt2-VX-tPn"/>
-                                    <action selector="loadButton1:" destination="nuS-Rs-LLZ" eventType="editingDidEnd" id="Vhr-Rm-zr6"/>
-                                    <action selector="saveButton1:" destination="nuS-Rs-LLZ" eventType="editingDidEndOnExit" id="wbT-qv-UUn"/>
-                                </connections>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISt-2V-PFx">
                                 <rect key="frame" x="16" y="377" width="256" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="svU-Oy-3v2">
-                                <rect key="frame" x="96" y="194" width="338" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="enter2:" destination="nuS-Rs-LLZ" eventType="editingChanged" id="GEm-vR-ULN"/>
-                                </connections>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG7-ZM-8br">
-                                <rect key="frame" x="218" y="395" width="120" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="22" y="463" width="65" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rNb-iX-ty8" customClass="UIDatePickerTextField" customModule="Scorebb" customModuleProvider="target">
-                                <rect key="frame" x="12" y="52" width="347" height="128"/>
+                                <rect key="frame" x="28" y="128" width="347" height="128"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CUb-NU-Zcd">
-                                <rect key="frame" x="82" y="440" width="57" height="75"/>
-                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="先攻チーム名" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKA-Ka-SDr">
+                                <rect key="frame" x="22" y="194" width="105" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="大会名・試合名" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfP-Cq-6Xw">
-                                <rect key="frame" x="22" y="162" width="119" height="30"/>
+                                <rect key="frame" x="22" y="162" width="117" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -178,27 +162,83 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="先攻チーム名" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKA-Ka-SDr">
-                                <rect key="frame" x="22" y="194" width="330" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJ3-DG-FK8">
+                                <rect key="frame" x="22" y="493" width="65" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Amb-rk-7LY">
+                                <rect key="frame" x="147" y="162" width="220" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="enter1:" destination="nuS-Rs-LLZ" eventType="editingChanged" id="zt2-VX-tPn"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="svU-Oy-3v2">
+                                <rect key="frame" x="147" y="194" width="220" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="enter2:" destination="nuS-Rs-LLZ" eventType="editingChanged" id="GEm-vR-ULN"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="urj-pf-6sq">
+                                <rect key="frame" x="147" y="226" width="220" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="enter3:" destination="nuS-Rs-LLZ" eventType="editingChanged" id="J0k-Ei-H9c"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="備考欄" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2E6-76-xdy">
+                                <rect key="frame" x="22" y="258" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bmR-MI-GrW">
+                                <rect key="frame" x="146" y="258" width="221" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYB-QK-C6s">
+                                <rect key="frame" x="189" y="296" width="32" height="30"/>
+                                <state key="normal" title="save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfL-Hi-rnv">
+                                <rect key="frame" x="278" y="296" width="35" height="30"/>
+                                <state key="normal" title="Load">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6n-US-1fs">
+                                <rect key="frame" x="22" y="463" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="7AT-eh-FfJ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="label1" destination="ISt-2V-PFx" id="wa8-C6-G5x"/>
                         <outlet property="label2" destination="nG7-ZM-8br" id="tqw-Iv-j5q"/>
+                        <outlet property="label3" destination="zJ3-DG-FK8" id="gUS-2f-zkE"/>
                         <outlet property="textfield1" destination="Amb-rk-7LY" id="ncG-9E-Z8F"/>
                         <outlet property="textfield2" destination="svU-Oy-3v2" id="uGV-8G-y44"/>
+                        <outlet property="textfield3" destination="urj-pf-6sq" id="EFA-Q5-BHH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJG-qK-w1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="811.5" y="223.5"/>
+            <point key="canvasLocation" x="524.5" y="132.5"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="4Oe-b1-CKN">
@@ -240,29 +280,18 @@
             </objects>
             <point key="canvasLocation" x="2100.5" y="176.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Scroller View Controller-->
         <scene sceneID="bSv-LM-I6L">
             <objects>
-                <viewController id="jGX-qk-oHm" sceneMemberID="viewController">
+                <viewController id="jGX-qk-oHm" customClass="scrollerViewController" customModule="Scorebb" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sJY-xF-hlM"/>
                         <viewControllerLayoutGuide type="bottom" id="4bM-fD-lpR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="96f-l4-Z0r">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5SS-Df-JEY">
-                                <rect key="frame" x="0.0" y="39" width="387" height="628"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rainappu2.png" translatesAutoresizingMaskIntoConstraints="NO" id="BRw-ha-FZC">
-                                        <rect key="frame" x="-54" y="-57" width="494" height="553"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rainappu2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qom-9f-Z4e">
-                                        <rect key="frame" x="-50" y="423" width="486" height="473"/>
-                                    </imageView>
-                                </subviews>
-                            </scrollView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ca-hT-1xH">
                                 <rect key="frame" x="0.0" y="-5" width="375" height="44"/>
                                 <color key="barTintColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
@@ -284,11 +313,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cc-Jp-Wc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730.5" y="1109.5"/>
+            <point key="canvasLocation" x="749.5" y="1308"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WXu-kv-Nmt">
@@ -345,7 +375,6 @@
         <image name="Score.png" width="350" height="250"/>
         <image name="grove.gif" width="155" height="150"/>
         <image name="kakono.png" width="350" height="250"/>
-        <image name="rainappu2.png" width="250" height="350"/>
         <image name="rainappu_rogo.png" width="350" height="250"/>
         <image name="scoreboard2.png" width="350" height="250"/>
         <image name="scorenyuuryoku.png" width="350" height="250"/>
@@ -355,6 +384,6 @@
         <image name="球場1.jpg" width="2048" height="1536"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="N9g-f0-c4J"/>
+        <segue reference="Vac-qm-f4y"/>
     </inferredMetricsTieBreakers>
 </document>

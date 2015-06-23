@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841F85A51B383C15003E2B69 /* scrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F85A41B383C15003E2B69 /* scrollerViewController.swift */; };
 		846A0CE51B300BA7001C981F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A0CE41B300BA7001C981F /* AppDelegate.swift */; };
 		846A0CE71B300BA7001C981F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A0CE61B300BA7001C981F /* ViewController.swift */; };
 		846A0CEA1B300BA7001C981F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846A0CE81B300BA7001C981F /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		8488471C1B3237990048C5D2 /* 球場1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8488471B1B3237990048C5D2 /* 球場1.jpg */; };
 		8488471E1B3240180048C5D2 /* ボール2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488471D1B3240180048C5D2 /* ボール2.png */; };
 		848847201B3257DB0048C5D2 /* font.php.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488471F1B3257DB0048C5D2 /* font.php.png */; };
-		849D984B1B37F00600A7D0A2 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D984A1B37F00600A7D0A2 /* ViewController3.swift */; };
 		84AFAE631B32C5CE0009E99C /* scorenyuuryoku.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE621B32C5CE0009E99C /* scorenyuuryoku.png */; };
 		84AFAE651B32C9500009E99C /* sensyurogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE641B32C9500009E99C /* sensyurogo.png */; };
 		84AFAE671B32CA300009E99C /* kakono.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE661B32CA300009E99C /* kakono.png */; };
@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841F85A41B383C15003E2B69 /* scrollerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scrollerViewController.swift; sourceTree = "<group>"; };
 		846A0CDF1B300BA7001C981F /* Scorebb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scorebb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846A0CE31B300BA7001C981F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846A0CE41B300BA7001C981F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		8488471B1B3237990048C5D2 /* 球場1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "球場1.jpg"; sourceTree = "<group>"; };
 		8488471D1B3240180048C5D2 /* ボール2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボール2.png"; sourceTree = "<group>"; };
 		8488471F1B3257DB0048C5D2 /* font.php.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font.php.png; sourceTree = "<group>"; };
-		849D984A1B37F00600A7D0A2 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		84AFAE621B32C5CE0009E99C /* scorenyuuryoku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scorenyuuryoku.png; sourceTree = "<group>"; };
 		84AFAE641B32C9500009E99C /* sensyurogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sensyurogo.png; sourceTree = "<group>"; };
 		84AFAE661B32CA300009E99C /* kakono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kakono.png; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 				846A0CE41B300BA7001C981F /* AppDelegate.swift */,
 				846A0CE61B300BA7001C981F /* ViewController.swift */,
 				848545F21B36593B00148547 /* ViewController2.swift */,
-				849D984A1B37F00600A7D0A2 /* ViewController3.swift */,
 				846A0CE81B300BA7001C981F /* Main.storyboard */,
+				841F85A41B383C15003E2B69 /* scrollerViewController.swift */,
 				84AFAE721B32DEE40009E99C /* rainappu2.png */,
 				84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */,
 				84AFAE681B32CEA40009E99C /* grove.gif */,
@@ -278,9 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841F85A51B383C15003E2B69 /* scrollerViewController.swift in Sources */,
 				846A0CE71B300BA7001C981F /* ViewController.swift in Sources */,
 				848545F31B36593B00148547 /* ViewController2.swift in Sources */,
-				849D984B1B37F00600A7D0A2 /* ViewController3.swift in Sources */,
 				846A0CE51B300BA7001C981F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
