@@ -8,14 +8,30 @@
 
 import UIKit
 
-class ViewController2:
-UIViewController //,UIPickerViewDelegate
+class ViewController2:UIViewController //,UIPickerViewDelegate
 {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        /*
+        //ラベル作成
+        let myLabel: UILabel = UILabel()
+        //サイズ
+        myLabel.frame = CGRectMake(0,0,120,30)
+        //位置
+        myLabel.layer.position = CGPoint(x:50,y: 180)
+        //背景色
+        myLabel.backgroundColor = UIColor.redColor()
+        // Viewにラベルを追加
+        self.view.addSubview(myLabel)
+    */
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,46 +53,135 @@ UIViewController //,UIPickerViewDelegate
     
     //Text Field に打ち込んだ文字をLabelに表示させる
     
-    @IBOutlet weak var label1: UILabel!
-    @IBOutlet weak var textfield1: UITextField!
     
-    @IBAction func enter1(sender: UITextField) {
-        label1.text = textfield1.text
-    }
+    @IBOutlet weak var textField1: UITextField!
     
-    @IBOutlet weak var label2: UILabel!
-    @IBOutlet weak var textfield2: UITextField!
+    //@IBOutlet weak var textfield1: UITextField!
     
+    
+    //@IBAction func enter1(sender: UITextField) {
+        //label1.text = textfield1.text
+    //}
+
+    
+    
+    //@IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var textField2: UITextField!
+    
+    /*
     @IBAction func enter2(sender: UITextField) {
         label2.text = textfield2.text
     }
+    */
+
     
+   // @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var textField3: UITextField!
     
-    @IBOutlet weak var label3: UILabel!
-    @IBOutlet weak var textfield3: UITextField!
-    
+    /*
     @IBAction func enter3(sender: UITextField) {
         label3.text = textfield3.text
     }
+    */
+    
+    @IBOutlet weak var label4: UILabel!
+    @IBOutlet weak var textField4: UITextField!
+    
+    
+    @IBAction func enter4(sender: UITextField) {
+        label4.text = textField4.text
+    }
+
+    
+    @IBOutlet weak var label5: UILabel!
+    @IBOutlet weak var textField5: UITextField!
+    
+    
+    @IBAction func enter5(sender: UITextField) {
+        label5.text = textField5.text
+    }
+    
+    
+    //@IBOutlet weak var label6: UILabel!
+    @IBOutlet weak var textField6: UITextField!
+    
+    /*
+    @IBAction func enter6(sender: UITextField) {
+        label6.text = textField6.text
+    }
+    */
+    
+    
+    
+    //@IBOutlet weak var label7: UILabel!
+    @IBOutlet weak var textField7: UITextField!
+    
+    /*
+    @IBAction func enter7(sender: UITextField) {
+        label7.text = textField7.text
+    }
+    */
+
     
     
     
     /*
-    //値のsave&load
-    
-    // saveボタンのアクション
-    @IBAction func saveButton1(sender: AnyObject) {
-    // データ保存処理
-    
-    // NSUserDefaultsインスタンスの生成
-    let userDefaults = NSUserDefaults.standardUserDefaults()
-    
-    // キー: "saveText" , 値: "" を格納。（idは任意）
-    userDefaults.setObject(textfield1.text, forKey: "saveText")
+    //saveボタンのアクション
+    @IBAction func saveButton(sender: AnyObject) {
+        // データ保存処理
+        
+        // NSUserDefaultsインスタンスの生成
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        
+        // キー: "saveText" , 値: "" を格納。（idは任意）
+        //userDefaults.setObject(textfield1.text, forKey: "saveText")
     }
+
     
     
     
+    //loadボタンのアクション
+    @IBAction func loadButton(sender: AnyObject) {
+        // データ読み込み処理
+        
+        // NSUserDefaultsインスタンスの生成
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        
+        // キーが"saveText"のStringをとります。
+        var loadText : String! = userDefaults.stringForKey("saveText")
+    
+        // labelに表示
+        //label1.text = loadText
+    }
+
+    */
+    
+    
+    
+    
+    
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewDidDisappear(animated) //エフェクト関係のパラメタだと思うが、今回は使用しないので、基底クラスを呼び出して、終わり。
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateオブジェクトの呼び出し。as ◯◯はSwiftのキャスト表現
+        appDelegate.ViewVal1 = textField1.text // TextFieldの値を取得し、値引き渡し用のプロパティにセット
+        appDelegate.ViewVal2 = textField2.text
+        appDelegate.ViewVal3 = textField3.text
+        appDelegate.ViewVal4 = textField4.text
+        appDelegate.ViewVal5 = textField5.text
+        appDelegate.ViewVal6 = textField6.text
+        appDelegate.ViewVal7 = textField7.text
+    }
+}
+
+
+
+    
+    
+    
+    
+    /*
     
     //配列を生成
     var names:[String] = ["カネキ", "トーカ", "リゼ", "ニシキ"]
@@ -110,30 +215,6 @@ UIViewController //,UIPickerViewDelegate
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /*
-    // loadボタンのアクション
-    @IBAction func loadButton1(sender: AnyObject) {
-    // データ読み込み処理
-
-    // NSUserDefaultsインスタンスの生成
-    let userDefaults = NSUserDefaults.standardUserDefaults()
-
-    // キーが"saveText"のStringをとります。
-    var loadText : String! = userDefaults.stringForKey("saveText")
-
-    // labelに表示
-    label1.text = loadText
-
-    }
     */
     
     
@@ -163,5 +244,3 @@ UIViewController //,UIPickerViewDelegate
         soundCount = row
     }
     */
-    */
-}

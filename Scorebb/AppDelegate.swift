@@ -12,6 +12,78 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    
+    //
+    private var viewVal1: String = ""
+    var ViewVal1: String {
+        get {
+            return viewVal1 // Labelに表示する値を返す。
+        }
+        set {
+            viewVal1 = newValue // TextFieldの値をここに設定する。
+        }
+    }
+    
+    private var viewVal2: String = ""
+    var ViewVal2: String {
+        get {
+            return viewVal2 // Labelに表示する値を返す。
+        }
+        set {
+            viewVal2 = newValue // TextFieldの値をここに設定する。
+        }
+    }
+    
+    private var viewVal3: String = ""
+    var ViewVal3: String {
+        get {
+            return viewVal3 // Labelに表示する値を返す。
+        }
+        set {
+            viewVal3 = newValue // TextFieldの値をここに設定する。
+        }
+    }
+    
+    private var viewVal4: String = ""
+    var ViewVal4: String {
+        get {
+            return viewVal4 // Labelに表示する値を返す。
+        }
+        set {
+            viewVal4 = newValue // TextFieldの値をここに設定する。
+        }
+    }
+    
+    private var viewVal5: String = ""
+    var ViewVal5: String {
+        get {
+            return viewVal5 // Labelに表示する値を返す。
+        }
+        set {
+            viewVal5 = newValue // TextFieldの値をここに設定する。
+        }
+    }
+    
+    private var viewVal6: String = ""
+    var ViewVal6: String {
+        get {
+            return viewVal6 // Labelに表示する値を返す。
+        }
+        set {
+            viewVal6 = newValue // TextFieldの値をここに設定する。
+        }
+    }
+    
+    private var viewVal7: String = ""
+    var ViewVal7: String {
+        get {
+            return viewVal7 // Labelに表示する値を返す。
+        }
+        set {
+            viewVal7 = newValue // TextFieldの値をここに設定する。
+        }
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
