@@ -16,23 +16,48 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
         
         // Do any additional setup after loading the view.
         
-        /*
-        //ラベル作成
-        let myLabel: UILabel = UILabel()
-        //サイズ
-        myLabel.frame = CGRectMake(0,0,120,30)
-        //位置
-        myLabel.layer.position = CGPoint(x:50,y: 180)
-        //背景色
-        myLabel.backgroundColor = UIColor.redColor()
-        // Viewにラベルを追加
-        self.view.addSubview(myLabel)
-    */
         
+    //備考欄について。
         
+        // 背景を灰色に設定する.
+        //self.view.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
         
+        // TextView生成する.
+        let myTextField: UITextField = UITextField(frame: CGRectMake(10, 520, self.view.frame.width - 20, 100))
         
+        // TextViewの背景を黃色に設定する.
+        myTextField.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 1, alpha: 1.0)
+        
+        // 表示させるテキストを設定する.
+        myTextField.text = ""
+        
+        // 枠線の色を黒に設定する.
+        myTextField.layer.borderColor = UIColor.blackColor().CGColor
+        
+        // フォントの設定をする.
+        myTextField.font = UIFont.systemFontOfSize(CGFloat(20))
+        
+        // フォントの色の設定をする.
+        myTextField.textColor = UIColor.blackColor()
+        
+        // 左詰めの設定をする.
+        myTextField.textAlignment = NSTextAlignment.Left
+        
+        // リンク、日付などを自動的に検出してリンクに変換する.
+        //myTextField.dataDetectorTypes = UIDataDetectorTypes.All
+        
+        // 影の濃さを設定する.
+        //myTextField.layer.shadowOpacity = 0.5
+        
+        // テキストを編集不可にする.
+        //myTextField.editable = false
+        
+        // TextViewをViewに追加する.
+        self.view.addSubview(myTextField)
     }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -51,7 +76,7 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
     */
     
     
-    //Text Field に打ち込んだ文字をLabelに表示させる
+    //TextFieldに打ち込んだ文字をLabelに表示させる
     
     
     @IBOutlet weak var textField1: UITextField!
@@ -125,7 +150,7 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
     
     
     
-    /*
+    
     //saveボタンのアクション
     @IBAction func saveButton(sender: AnyObject) {
         // データ保存処理
@@ -134,34 +159,23 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
         let userDefaults = NSUserDefaults.standardUserDefaults()
         
         // キー: "saveText" , 値: "" を格納。（idは任意）
-        //userDefaults.setObject(textfield1.text, forKey: "saveText")
-    }
-
-    
-    
-    
-    //loadボタンのアクション
-    @IBAction func loadButton(sender: AnyObject) {
-        // データ読み込み処理
+        userDefaults.setObject(textField1.text, forKey: "label1")
+        userDefaults.setObject(textField2.text, forKey: "label2")
+        userDefaults.setObject(textField3.text, forKey: "label3")
+        userDefaults.setObject(textField4.text, forKey: "label4")
+        userDefaults.setObject(textField5.text, forKey: "label5")
+        userDefaults.setObject(textField6.text, forKey: "label6")
+        userDefaults.setObject(textField7.text, forKey: "label7")
+    //userDefaults.setObject(myTextField.text, forKey: "label8")
         
-        // NSUserDefaultsインスタンスの生成
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        
-        // キーが"saveText"のStringをとります。
-        var loadText : String! = userDefaults.stringForKey("saveText")
-    
-        // labelに表示
-        //label1.text = loadText
     }
-
-    */
     
     
     
     
     
     
-    
+    /*
     override func viewWillDisappear(animated: Bool) {
         super.viewDidDisappear(animated) //エフェクト関係のパラメタだと思うが、今回は使用しないので、基底クラスを呼び出して、終わり。
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateオブジェクトの呼び出し。as ◯◯はSwiftのキャスト表現
@@ -173,6 +187,8 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
         appDelegate.ViewVal6 = textField6.text
         appDelegate.ViewVal7 = textField7.text
     }
+    */
+    
 }
 
 
@@ -217,30 +233,3 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
     
     */
     
-    
-    
-    //PickerViewについて
-    
-    /*
-    @IBOutlet var scorePickerView: UIPickerView!
-    var soundCount: Int = 0
-    
-    //いくつカテゴリーを持つか
-    func numberOfComponentsInPickerView(pickerView: UIPickerView!) -> Int {
-        return 1
-    }
-    //いくつ選択肢をつくるか
-    func pickerView(pickerView: UIPickerView!, numberOfRowsInComponent component: Int) -> Int
-    {
-        return 20
-    }
-    //選択肢になにを表示していくか1!
-    func pickerView(pickerView: UIPickerView!, titleForRow row: Int, forComponent component: Int) -> String
-    {
-        return "\(row+1)"
-    }
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
-    {
-        soundCount = row
-    }
-    */

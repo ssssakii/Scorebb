@@ -35,6 +35,7 @@ class SubTableView: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    /*
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -46,11 +47,63 @@ class SubTableView: UIViewController {
         label6.text =  appDelegate.ViewVal6
         label7.text =  appDelegate.ViewVal7
     }
+    */
     
+    
+    
+    //loadボタンのアクション
+    @IBAction func loadButton(sender: AnyObject) {
+        // データ読み込み処理
+        
+        // NSUserDefaultsインスタンスの生成
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        
+        // キーが"saveText"のStringをとります。
+        var loadText1 : String! = userDefaults.stringForKey("label1")
+        var loadText2 : String! = userDefaults.stringForKey("label2")
+        var loadText3 : String! = userDefaults.stringForKey("label3")
+        var loadText4 : String! = userDefaults.stringForKey("label4")
+        var loadText5 : String! = userDefaults.stringForKey("label5")
+        var loadText6 : String! = userDefaults.stringForKey("label6")
+        var loadText7 : String! = userDefaults.stringForKey("label7")
+        var loadText8 : String! = userDefaults.stringForKey("label8")
         
         
-        
+        // labelに表示
+        label1.text = loadText1
+        label2.text = loadText2
+        label3.text = loadText3
+        label4.text = loadText4
+        label5.text = loadText5
+        label6.text = loadText6
+        label7.text = loadText7
+    //label8.text = loadText8
+
     }
+    
+    
+    //スクリーンショット機能
+    
+    struct ScreenCaptureUtil {
+        static func take()->UIImage{
+            
+            //キャプチャ取得.変数screenshotにUIImageが保存されます
+            let layer = UIApplication.sharedApplication().keyWindow!.layer
+            let scale = UIScreen.mainScreen().scale
+            UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+            
+            layer.renderInContext(UIGraphicsGetCurrentContext())
+            let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext();
+            
+            return screenshot;
+            
+        }
+    }
+        
+        
+        
+}
 
     
    

@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    
+    /*
     //
     private var viewVal1: String = ""
     var ViewVal1: String {
@@ -84,6 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             viewVal7 = newValue // TextFieldの値をここに設定する。
         }
     }
+    */
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
