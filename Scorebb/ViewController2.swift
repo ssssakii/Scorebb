@@ -17,7 +17,11 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
         // Do any additional setup after loading the view.
         
         
-    //備考欄について。
+        
+        /////////////////
+        //備考欄について。//
+        /////////////////
+        
         
         // 背景を灰色に設定する.
         //self.view.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
@@ -75,8 +79,9 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
     }
     */
     
+
+    //TextFieldに打ち込んだ文字をLabelに表示させる//
     
-    //TextFieldに打ち込んだ文字をLabelに表示させる
     
     
     @IBOutlet weak var textField1: UITextField!
@@ -150,8 +155,11 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
     
     
     
+    ///////////////////////
+    //saveボタンのアクション//
+    ///////////////////////
     
-    //saveボタンのアクション
+    
     @IBAction func saveButton(sender: AnyObject) {
         // データ保存処理
         

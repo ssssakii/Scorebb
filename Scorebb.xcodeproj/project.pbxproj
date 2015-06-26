@@ -26,8 +26,8 @@
 		84AFAE671B32CA300009E99C /* kakono.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE661B32CA300009E99C /* kakono.png */; };
 		84AFAE691B32CEA40009E99C /* grove.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE681B32CEA40009E99C /* grove.gif */; };
 		84AFAE711B32DA3B0009E99C /* rainappu_rogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */; };
-		84CB223E1B3B1FF600A37DEA /* book1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84CB223D1B3B1FF600A37DEA /* book1.png */; };
 		84CB22401B3B242100A37DEA /* bad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CB223F1B3B242100A37DEA /* bad.jpg */; };
+		84CB22741B3C628F00A37DEA /* book5.png in Resources */ = {isa = PBXBuildFile; fileRef = 84CB22731B3C628F00A37DEA /* book5.png */; };
 		84F2FAF31B32B00E006B257A /* Baseball1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF21B32B00E006B257A /* Baseball1.png */; };
 		84F2FAF51B32B2DF006B257A /* Score.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF41B32B2DF006B257A /* Score.png */; };
 		84F2FAF71B32B33E006B257A /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF61B32B33E006B257A /* Book.png */; };
@@ -68,8 +68,8 @@
 		84AFAE661B32CA300009E99C /* kakono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kakono.png; sourceTree = "<group>"; };
 		84AFAE681B32CEA40009E99C /* grove.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grove.gif; sourceTree = "<group>"; };
 		84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainappu_rogo.png; sourceTree = "<group>"; };
-		84CB223D1B3B1FF600A37DEA /* book1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book1.png; sourceTree = "<group>"; };
 		84CB223F1B3B242100A37DEA /* bad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bad.jpg; sourceTree = "<group>"; };
+		84CB22731B3C628F00A37DEA /* book5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book5.png; sourceTree = "<group>"; };
 		84F2FAF21B32B00E006B257A /* Baseball1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Baseball1.png; sourceTree = "<group>"; };
 		84F2FAF41B32B2DF006B257A /* Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Score.png; sourceTree = "<group>"; };
 		84F2FAF61B32B33E006B257A /* Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Book.png; sourceTree = "<group>"; };
@@ -121,8 +121,8 @@
 				84ACFE401B3A7FA4006EC2A8 /* SubTableView.swift */,
 				84ACFE3E1B3A7DB8006EC2A8 /* TableView.swift */,
 				846A0CE81B300BA7001C981F /* Main.storyboard */,
+				84CB22731B3C628F00A37DEA /* book5.png */,
 				84CB223F1B3B242100A37DEA /* bad.jpg */,
-				84CB223D1B3B1FF600A37DEA /* book1.png */,
 				841F85A41B383C15003E2B69 /* scrollerViewController.swift */,
 				84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */,
 				84AFAE681B32CEA40009E99C /* grove.gif */,
@@ -255,7 +255,7 @@
 				84F2FAF31B32B00E006B257A /* Baseball1.png in Resources */,
 				848847201B3257DB0048C5D2 /* font.php.png in Resources */,
 				8488471A1B32378C0048C5D2 /* スコアボード1.jpg in Resources */,
-				84CB223E1B3B1FF600A37DEA /* book1.png in Resources */,
+				84CB22741B3C628F00A37DEA /* book5.png in Resources */,
 				846A0CEA1B300BA7001C981F /* Main.storyboard in Resources */,
 				8488471C1B3237990048C5D2 /* 球場1.jpg in Resources */,
 				84AFAE671B32CA300009E99C /* kakono.png in Resources */,
