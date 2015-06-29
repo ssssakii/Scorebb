@@ -22,30 +22,30 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
         //備考欄について。//
         /////////////////
         
-        
+      /*
         // 背景を灰色に設定する.
         //self.view.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
         
         // TextView生成する.
-        let myTextField: UITextField = UITextField(frame: CGRectMake(10, 520, self.view.frame.width - 20, 100))
+        let textField8: UITextField = UITextField(frame: CGRectMake(10, 520, self.view.frame.width - 20, 100))
         
         // TextViewの背景を黃色に設定する.
-        myTextField.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 1, alpha: 1.0)
+        //myTextField.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 1, alpha: 1.0)
         
         // 表示させるテキストを設定する.
-        myTextField.text = ""
+        textField8.text = ""
         
         // 枠線の色を黒に設定する.
-        myTextField.layer.borderColor = UIColor.blackColor().CGColor
+        textField8.layer.borderColor = UIColor.blackColor().CGColor
         
         // フォントの設定をする.
-        myTextField.font = UIFont.systemFontOfSize(CGFloat(20))
+        //myTextField.font = UIFont.systemFontOfSize(CGFloat(20))
         
         // フォントの色の設定をする.
-        myTextField.textColor = UIColor.blackColor()
+        textField8.textColor = UIColor.blackColor()
         
         // 左詰めの設定をする.
-        myTextField.textAlignment = NSTextAlignment.Left
+        textField8.textAlignment = NSTextAlignment.Left
         
         // リンク、日付などを自動的に検出してリンクに変換する.
         //myTextField.dataDetectorTypes = UIDataDetectorTypes.All
@@ -57,9 +57,10 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
         //myTextField.editable = false
         
         // TextViewをViewに追加する.
-        self.view.addSubview(myTextField)
-    }
+        self.view.addSubview(textField8)
     
+    */
+    }
     
     
 
@@ -86,38 +87,18 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
     
     @IBOutlet weak var textField1: UITextField!
     
-    //@IBOutlet weak var textfield1: UITextField!
-    
-    
+    //textField1に打ち込んだ文字をLabel1に表示させる
     //@IBAction func enter1(sender: UITextField) {
         //label1.text = textfield1.text
     //}
 
-    
-    
-    //@IBOutlet weak var label2: UILabel!
-    @IBOutlet weak var textField2: UITextField!
-    
-    /*
-    @IBAction func enter2(sender: UITextField) {
-        label2.text = textfield2.text
-    }
-    */
 
-    
-   // @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
-    
-    /*
-    @IBAction func enter3(sender: UITextField) {
-        label3.text = textfield3.text
-    }
-    */
+ 
     
     @IBOutlet weak var label4: UILabel!
     @IBOutlet weak var textField4: UITextField!
-    
-    
     @IBAction func enter4(sender: UITextField) {
         label4.text = textField4.text
     }
@@ -125,33 +106,14 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
     
     @IBOutlet weak var label5: UILabel!
     @IBOutlet weak var textField5: UITextField!
-    
-    
     @IBAction func enter5(sender: UITextField) {
         label5.text = textField5.text
     }
     
     
-    //@IBOutlet weak var label6: UILabel!
     @IBOutlet weak var textField6: UITextField!
-    
-    /*
-    @IBAction func enter6(sender: UITextField) {
-        label6.text = textField6.text
-    }
-    */
-    
-    
-    
-    //@IBOutlet weak var label7: UILabel!
     @IBOutlet weak var textField7: UITextField!
-    
-    /*
-    @IBAction func enter7(sender: UITextField) {
-        label7.text = textField7.text
-    }
-    */
-
+    //@IBOutlet weak var textField8: UITextField!
     
     
     
@@ -174,7 +136,7 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
         userDefaults.setObject(textField5.text, forKey: "label5")
         userDefaults.setObject(textField6.text, forKey: "label6")
         userDefaults.setObject(textField7.text, forKey: "label7")
-    //userDefaults.setObject(myTextField.text, forKey: "label8")
+        //userDefaults.setObject(textField8.text, forKey: "label8")
         
     }
     

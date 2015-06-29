@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		841F85A51B383C15003E2B69 /* scrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F85A41B383C15003E2B69 /* scrollerViewController.swift */; };
+		842A390F1B3E94FF0056DAD5 /* player4.png in Resources */ = {isa = PBXBuildFile; fileRef = 842A390E1B3E94FF0056DAD5 /* player4.png */; };
+		842A39111B3E95470056DAD5 /* ball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 842A39101B3E95470056DAD5 /* ball.gif */; };
+		842A39191B3E97CF0056DAD5 /* bad2.png in Resources */ = {isa = PBXBuildFile; fileRef = 842A39181B3E97CF0056DAD5 /* bad2.png */; };
+		842A391D1B3E9F470056DAD5 /* bad5.png in Resources */ = {isa = PBXBuildFile; fileRef = 842A391C1B3E9F470056DAD5 /* bad5.png */; };
+		842A391F1B3EA1AA0056DAD5 /* hed4.png in Resources */ = {isa = PBXBuildFile; fileRef = 842A391E1B3EA1AA0056DAD5 /* hed4.png */; };
+		842A39251B3EE8AD0056DAD5 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A39241B3EE8AD0056DAD5 /* Position.swift */; };
+		842A39271B3EE9DA0056DAD5 /* position2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 842A39261B3EE9DA0056DAD5 /* position2.gif */; };
 		846A0CE51B300BA7001C981F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A0CE41B300BA7001C981F /* AppDelegate.swift */; };
 		846A0CE71B300BA7001C981F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A0CE61B300BA7001C981F /* ViewController.swift */; };
 		846A0CEA1B300BA7001C981F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846A0CE81B300BA7001C981F /* Main.storyboard */; };
@@ -18,7 +25,6 @@
 		8488471A1B32378C0048C5D2 /* スコアボード1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 848847191B32378C0048C5D2 /* スコアボード1.jpg */; };
 		8488471C1B3237990048C5D2 /* 球場1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8488471B1B3237990048C5D2 /* 球場1.jpg */; };
 		8488471E1B3240180048C5D2 /* ボール2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488471D1B3240180048C5D2 /* ボール2.png */; };
-		848847201B3257DB0048C5D2 /* font.php.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488471F1B3257DB0048C5D2 /* font.php.png */; };
 		84ACFE3F1B3A7DB8006EC2A8 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACFE3E1B3A7DB8006EC2A8 /* TableView.swift */; };
 		84ACFE411B3A7FA4006EC2A8 /* SubTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACFE401B3A7FA4006EC2A8 /* SubTableView.swift */; };
 		84AFAE631B32C5CE0009E99C /* scorenyuuryoku.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE621B32C5CE0009E99C /* scorenyuuryoku.png */; };
@@ -26,7 +32,6 @@
 		84AFAE671B32CA300009E99C /* kakono.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE661B32CA300009E99C /* kakono.png */; };
 		84AFAE691B32CEA40009E99C /* grove.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE681B32CEA40009E99C /* grove.gif */; };
 		84AFAE711B32DA3B0009E99C /* rainappu_rogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */; };
-		84CB22401B3B242100A37DEA /* bad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CB223F1B3B242100A37DEA /* bad.jpg */; };
 		84CB22741B3C628F00A37DEA /* book5.png in Resources */ = {isa = PBXBuildFile; fileRef = 84CB22731B3C628F00A37DEA /* book5.png */; };
 		84F2FAF31B32B00E006B257A /* Baseball1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF21B32B00E006B257A /* Baseball1.png */; };
 		84F2FAF51B32B2DF006B257A /* Score.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF41B32B2DF006B257A /* Score.png */; };
@@ -46,6 +51,13 @@
 
 /* Begin PBXFileReference section */
 		841F85A41B383C15003E2B69 /* scrollerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scrollerViewController.swift; sourceTree = "<group>"; };
+		842A390E1B3E94FF0056DAD5 /* player4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player4.png; sourceTree = "<group>"; };
+		842A39101B3E95470056DAD5 /* ball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ball.gif; sourceTree = "<group>"; };
+		842A39181B3E97CF0056DAD5 /* bad2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bad2.png; sourceTree = "<group>"; };
+		842A391C1B3E9F470056DAD5 /* bad5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bad5.png; sourceTree = "<group>"; };
+		842A391E1B3EA1AA0056DAD5 /* hed4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hed4.png; sourceTree = "<group>"; };
+		842A39241B3EE8AD0056DAD5 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = SOURCE_ROOT; };
+		842A39261B3EE9DA0056DAD5 /* position2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = position2.gif; sourceTree = "<group>"; };
 		846A0CDF1B300BA7001C981F /* Scorebb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scorebb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846A0CE31B300BA7001C981F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846A0CE41B300BA7001C981F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +72,6 @@
 		848847191B32378C0048C5D2 /* スコアボード1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "スコアボード1.jpg"; sourceTree = "<group>"; };
 		8488471B1B3237990048C5D2 /* 球場1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "球場1.jpg"; sourceTree = "<group>"; };
 		8488471D1B3240180048C5D2 /* ボール2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボール2.png"; sourceTree = "<group>"; };
-		8488471F1B3257DB0048C5D2 /* font.php.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font.php.png; sourceTree = "<group>"; };
 		84ACFE3E1B3A7DB8006EC2A8 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = SOURCE_ROOT; };
 		84ACFE401B3A7FA4006EC2A8 /* SubTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTableView.swift; sourceTree = SOURCE_ROOT; };
 		84AFAE621B32C5CE0009E99C /* scorenyuuryoku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scorenyuuryoku.png; sourceTree = "<group>"; };
@@ -68,7 +79,6 @@
 		84AFAE661B32CA300009E99C /* kakono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kakono.png; sourceTree = "<group>"; };
 		84AFAE681B32CEA40009E99C /* grove.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grove.gif; sourceTree = "<group>"; };
 		84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainappu_rogo.png; sourceTree = "<group>"; };
-		84CB223F1B3B242100A37DEA /* bad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bad.jpg; sourceTree = "<group>"; };
 		84CB22731B3C628F00A37DEA /* book5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book5.png; sourceTree = "<group>"; };
 		84F2FAF21B32B00E006B257A /* Baseball1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Baseball1.png; sourceTree = "<group>"; };
 		84F2FAF41B32B2DF006B257A /* Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Score.png; sourceTree = "<group>"; };
@@ -120,9 +130,15 @@
 				848545F21B36593B00148547 /* ViewController2.swift */,
 				84ACFE401B3A7FA4006EC2A8 /* SubTableView.swift */,
 				84ACFE3E1B3A7DB8006EC2A8 /* TableView.swift */,
+				842A39241B3EE8AD0056DAD5 /* Position.swift */,
 				846A0CE81B300BA7001C981F /* Main.storyboard */,
+				842A39261B3EE9DA0056DAD5 /* position2.gif */,
+				842A391E1B3EA1AA0056DAD5 /* hed4.png */,
+				842A391C1B3E9F470056DAD5 /* bad5.png */,
+				842A39181B3E97CF0056DAD5 /* bad2.png */,
+				842A39101B3E95470056DAD5 /* ball.gif */,
+				842A390E1B3E94FF0056DAD5 /* player4.png */,
 				84CB22731B3C628F00A37DEA /* book5.png */,
-				84CB223F1B3B242100A37DEA /* bad.jpg */,
 				841F85A41B383C15003E2B69 /* scrollerViewController.swift */,
 				84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */,
 				84AFAE681B32CEA40009E99C /* grove.gif */,
@@ -133,7 +149,6 @@
 				84F2FAF61B32B33E006B257A /* Book.png */,
 				84F2FAF41B32B2DF006B257A /* Score.png */,
 				84F2FAF21B32B00E006B257A /* Baseball1.png */,
-				8488471F1B3257DB0048C5D2 /* font.php.png */,
 				8488471D1B3240180048C5D2 /* ボール2.png */,
 				8488471B1B3237990048C5D2 /* 球場1.jpg */,
 				848847191B32378C0048C5D2 /* スコアボード1.jpg */,
@@ -253,18 +268,22 @@
 				84AFAE691B32CEA40009E99C /* grove.gif in Resources */,
 				84F2FAF51B32B2DF006B257A /* Score.png in Resources */,
 				84F2FAF31B32B00E006B257A /* Baseball1.png in Resources */,
-				848847201B3257DB0048C5D2 /* font.php.png in Resources */,
 				8488471A1B32378C0048C5D2 /* スコアボード1.jpg in Resources */,
 				84CB22741B3C628F00A37DEA /* book5.png in Resources */,
+				842A391F1B3EA1AA0056DAD5 /* hed4.png in Resources */,
+				842A39111B3E95470056DAD5 /* ball.gif in Resources */,
 				846A0CEA1B300BA7001C981F /* Main.storyboard in Resources */,
+				842A391D1B3E9F470056DAD5 /* bad5.png in Resources */,
 				8488471C1B3237990048C5D2 /* 球場1.jpg in Resources */,
 				84AFAE671B32CA300009E99C /* kakono.png in Resources */,
 				846A0CEF1B300BA7001C981F /* LaunchScreen.xib in Resources */,
 				84AFAE631B32C5CE0009E99C /* scorenyuuryoku.png in Resources */,
+				842A39271B3EE9DA0056DAD5 /* position2.gif in Resources */,
 				84AFAE651B32C9500009E99C /* sensyurogo.png in Resources */,
 				846A0CEC1B300BA7001C981F /* Images.xcassets in Resources */,
 				8488471E1B3240180048C5D2 /* ボール2.png in Resources */,
-				84CB22401B3B242100A37DEA /* bad.jpg in Resources */,
+				842A390F1B3E94FF0056DAD5 /* player4.png in Resources */,
+				842A39191B3E97CF0056DAD5 /* bad2.png in Resources */,
 				84F2FAF71B32B33E006B257A /* Book.png in Resources */,
 				84F2FAFD1B32B900006B257A /* you3.png in Resources */,
 			);
@@ -284,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842A39251B3EE8AD0056DAD5 /* Position.swift in Sources */,
 				84ACFE411B3A7FA4006EC2A8 /* SubTableView.swift in Sources */,
 				841F85A51B383C15003E2B69 /* scrollerViewController.swift in Sources */,
 				84ACFE3F1B3A7DB8006EC2A8 /* TableView.swift in Sources */,

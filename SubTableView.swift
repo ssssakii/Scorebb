@@ -12,8 +12,12 @@ import Social
 class SubTableView: UIViewController {
     
     //Twitter投稿
+    
     var myComposeView : SLComposeViewController!
     var myTwitterButton: UIButton!
+    
+    
+    
     
     //label生成
     @IBOutlet weak var label1: UILabel!
@@ -23,12 +27,15 @@ class SubTableView: UIViewController {
     @IBOutlet weak var label5: UILabel!
     @IBOutlet weak var label6: UILabel!
     @IBOutlet weak var label7: UILabel!
+    @IBOutlet weak var label8: UILabel!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
         
         /////////////////////////////
         // Twitter用のUIButtonの生成.//
@@ -54,6 +61,8 @@ class SubTableView: UIViewController {
         
         // buttonをviewに追加.
         self.view.addSubview(myTwitterButton)
+    
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -104,7 +113,43 @@ class SubTableView: UIViewController {
         label5.text = loadText5
         label6.text = loadText6
         label7.text = loadText7
-    //label8.text = loadText8
+        label8.text = loadText8
+        
+        // matomeとしてloadTextをまとめる
+        var matome : String!
+        matome = loadText1 + loadText2 + loadText3 + loadText4 + loadText5 + loadText6 + loadText7
+        
+        
+        //////////
+        //String//
+        //////////
+        
+        //保存
+        NSUserDefaults.standardUserDefaults().setObject(matome, forKey:"hogeKey");
+        NSUserDefaults.standardUserDefaults().synchronize();
+        // println(matome)
+        
+        //読み込み
+        let obj: AnyObject! = NSUserDefaults.standardUserDefaults().objectForKey("hogeKey");
+        println(obj);//matome
+        
+        
+        ////////
+        //Arry//
+        ////////
+        
+        //保存
+        let jumpArr = ["loadText1","loadText2","loadText3","loadText4","loadText5","loadText6","loadText7"]
+        NSUserDefaults.standardUserDefaults().setObject(jumpArr, forKey:"hogeDic");
+        NSUserDefaults.standardUserDefaults().synchronize();
+        
+        //読み込み（パターン1) object型で読み混み
+        let arr: AnyObject! = NSUserDefaults.standardUserDefaults().arrayForKey("hogeDic");
+        println(arr);
+        // loadText1,loadText2,loadText3,loadText4,loadText5,loadText6,loadText7
+
+        
+    
 
     }
     
@@ -130,33 +175,77 @@ class SubTableView: UIViewController {
         }
         
     }
+    
+    /*
         @IBAction func screenload(){
             //利用方法
             let screenshot = ScreenCaptureUtil.take();
             UIImageWriteToSavedPhotosAlbum(screenshot, nil, nil, nil);
+    */
+
         
 
-    }
+    
     
     ////////////////////////
-    //Twitterボタンイベント.//
+    //Twitterボタンイベント///
     ////////////////////////
+    
     func onPostToTwitter(sender : AnyObject) {
         
         // SLComposeViewControllerのインスタンス化.
         // ServiceTypeをTwitterに指定.
         myComposeView = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
         
+        
         // 投稿するテキストを指定.
         myComposeView.setInitialText("")
         
+        //スクリーンショット利用方法
+        let screenshot = ScreenCaptureUtil.take();
+        //UIImageWriteToSavedPhotosAlbum(screenshot, nil, nil, nil);      ////////いるかどうか？？？？？
+        
         // 投稿する画像を指定.
-        myComposeView.addImage(UIImage(named: "screenshot"))            //////////////これで大丈夫？？？？？？？？？？////////////////
+        myComposeView.addImage(/*UIImage(named: */screenshot)            //////////////これで大丈夫？？？？？？？？？？////////////////
         
         // myComposeViewの画面遷移.
         self.presentViewController(myComposeView, animated: true, completion: nil)
     }
+
     
+    
+    
+    /*
+    /* twitterボタン押下時に呼ばれるメソッド */
+    @IBAction func twitterBtn(sender: AnyObject) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
+            showPostView(serviceType: SLServiceTypeTwitter)
+        }
+    }
+    /* 投稿画面を表示 */
+    func showPostView(#serviceType:String){
+        
+        var controller = SLComposeViewController(forServiceType: serviceType)
+        
+    
+        // 表示中のページURLをセット
+        let link: NSURL? = self.webView?.request?.URL
+        if let shareUrl = link {
+            controller.addURL(shareUrl)
+        }
+        
+        
+        // 表示中のページURLのタイトルをセット
+        let title: String? = self.webView.stringByEvaluatingJavaScriptFromString("document.title")
+        if let shareTitle = title {
+            controller.setInitialText(shareTitle)
+        }
+        
+        
+        // 表示
+        presentViewController(controller, animated: true, completion: {})
+    }
+    */
     
     
         
