@@ -20,9 +20,9 @@ class Position: UIViewController {
         ////
         //////////
         
-        let TextView: UITextView = UITextView(frame: CGRectMake(10, 420, self.view.frame.width - 20, 200))
+        let TextView: UITextView = UITextView(frame: CGRectMake(10, 530, self.view.frame.width - 20,500))
         
-        TextView.text = "１投手  ピッチャー\n２捕手  キャッチャー\n３一塁手 ファースト\n４二塁手 セカンド\n５三塁手 サード\n６遊撃手 ショート\n７左翼手 レフト\n８中堅手 センター\n８右翼手 ライト"
+        TextView.text = "１ピッチャー    投手\n２キャッチャー 捕手\n３ファースト     一塁手\n４セカンド       二塁手 \n５サード          三塁手\n６ショート       遊撃手\n７レフト          左翼手\n８センター      中堅手\n９ライト         右翼手"
         //TextView.backgroundColor = UIColor.grayColor()
         
         // TextViewをViewに追加する.

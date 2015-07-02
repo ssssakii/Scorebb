@@ -21,6 +21,15 @@
 		846A0CEC1B300BA7001C981F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846A0CEB1B300BA7001C981F /* Images.xcassets */; };
 		846A0CEF1B300BA7001C981F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846A0CED1B300BA7001C981F /* LaunchScreen.xib */; };
 		846A0CFB1B300BA8001C981F /* ScorebbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A0CFA1B300BA8001C981F /* ScorebbTests.swift */; };
+		848395CA1B443BC10039D64C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848395C91B443BC10039D64C /* RootViewController.swift */; };
+		848395CC1B4460390039D64C /* studio1.png in Resources */ = {isa = PBXBuildFile; fileRef = 848395CB1B4460390039D64C /* studio1.png */; };
+		848395CE1B447B1C0039D64C /* loadButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 848395CD1B447B1C0039D64C /* loadButton.png */; };
+		848395D01B447BAB0039D64C /* saveButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 848395CF1B447BAB0039D64C /* saveButton.png */; };
+		848395D31B447CA30039D64C /* pencil1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 848395D11B447CA30039D64C /* pencil1.gif */; };
+		848395D41B447CA30039D64C /* pencil3.png in Resources */ = {isa = PBXBuildFile; fileRef = 848395D21B447CA30039D64C /* pencil3.png */; };
+		848395D81B447D5F0039D64C /* pencil4.png in Resources */ = {isa = PBXBuildFile; fileRef = 848395D51B447D5F0039D64C /* pencil4.png */; };
+		848395D91B447D5F0039D64C /* pencil5.png in Resources */ = {isa = PBXBuildFile; fileRef = 848395D61B447D5F0039D64C /* pencil5.png */; };
+		848395DA1B447D5F0039D64C /* pencil6.png in Resources */ = {isa = PBXBuildFile; fileRef = 848395D71B447D5F0039D64C /* pencil6.png */; };
 		848545F31B36593B00148547 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848545F21B36593B00148547 /* ViewController2.swift */; };
 		8488471A1B32378C0048C5D2 /* スコアボード1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 848847191B32378C0048C5D2 /* スコアボード1.jpg */; };
 		8488471C1B3237990048C5D2 /* 球場1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8488471B1B3237990048C5D2 /* 球場1.jpg */; };
@@ -33,6 +42,7 @@
 		84AFAE691B32CEA40009E99C /* grove.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE681B32CEA40009E99C /* grove.gif */; };
 		84AFAE711B32DA3B0009E99C /* rainappu_rogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */; };
 		84CB22741B3C628F00A37DEA /* book5.png in Resources */ = {isa = PBXBuildFile; fileRef = 84CB22731B3C628F00A37DEA /* book5.png */; };
+		84ED18641B42599400710D26 /* scorebord_kaisetu.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ED18631B42599400710D26 /* scorebord_kaisetu.png */; };
 		84F2FAF31B32B00E006B257A /* Baseball1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF21B32B00E006B257A /* Baseball1.png */; };
 		84F2FAF51B32B2DF006B257A /* Score.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF41B32B2DF006B257A /* Score.png */; };
 		84F2FAF71B32B33E006B257A /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FAF61B32B33E006B257A /* Book.png */; };
@@ -68,6 +78,15 @@
 		846A0CF41B300BA7001C981F /* ScorebbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScorebbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		846A0CF91B300BA8001C981F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846A0CFA1B300BA8001C981F /* ScorebbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorebbTests.swift; sourceTree = "<group>"; };
+		848395C91B443BC10039D64C /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = SOURCE_ROOT; };
+		848395CB1B4460390039D64C /* studio1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = studio1.png; sourceTree = "<group>"; };
+		848395CD1B447B1C0039D64C /* loadButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadButton.png; sourceTree = "<group>"; };
+		848395CF1B447BAB0039D64C /* saveButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saveButton.png; sourceTree = "<group>"; };
+		848395D11B447CA30039D64C /* pencil1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pencil1.gif; sourceTree = "<group>"; };
+		848395D21B447CA30039D64C /* pencil3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil3.png; sourceTree = "<group>"; };
+		848395D51B447D5F0039D64C /* pencil4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil4.png; sourceTree = "<group>"; };
+		848395D61B447D5F0039D64C /* pencil5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil5.png; sourceTree = "<group>"; };
+		848395D71B447D5F0039D64C /* pencil6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil6.png; sourceTree = "<group>"; };
 		848545F21B36593B00148547 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		848847191B32378C0048C5D2 /* スコアボード1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "スコアボード1.jpg"; sourceTree = "<group>"; };
 		8488471B1B3237990048C5D2 /* 球場1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "球場1.jpg"; sourceTree = "<group>"; };
@@ -80,6 +99,7 @@
 		84AFAE681B32CEA40009E99C /* grove.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grove.gif; sourceTree = "<group>"; };
 		84AFAE701B32DA3B0009E99C /* rainappu_rogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainappu_rogo.png; sourceTree = "<group>"; };
 		84CB22731B3C628F00A37DEA /* book5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book5.png; sourceTree = "<group>"; };
+		84ED18631B42599400710D26 /* scorebord_kaisetu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scorebord_kaisetu.png; sourceTree = "<group>"; };
 		84F2FAF21B32B00E006B257A /* Baseball1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Baseball1.png; sourceTree = "<group>"; };
 		84F2FAF41B32B2DF006B257A /* Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Score.png; sourceTree = "<group>"; };
 		84F2FAF61B32B33E006B257A /* Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Book.png; sourceTree = "<group>"; };
@@ -131,7 +151,17 @@
 				84ACFE401B3A7FA4006EC2A8 /* SubTableView.swift */,
 				84ACFE3E1B3A7DB8006EC2A8 /* TableView.swift */,
 				842A39241B3EE8AD0056DAD5 /* Position.swift */,
+				848395C91B443BC10039D64C /* RootViewController.swift */,
 				846A0CE81B300BA7001C981F /* Main.storyboard */,
+				848395D51B447D5F0039D64C /* pencil4.png */,
+				848395D61B447D5F0039D64C /* pencil5.png */,
+				848395D71B447D5F0039D64C /* pencil6.png */,
+				848395D11B447CA30039D64C /* pencil1.gif */,
+				848395D21B447CA30039D64C /* pencil3.png */,
+				848395CF1B447BAB0039D64C /* saveButton.png */,
+				848395CD1B447B1C0039D64C /* loadButton.png */,
+				848395CB1B4460390039D64C /* studio1.png */,
+				84ED18631B42599400710D26 /* scorebord_kaisetu.png */,
 				842A39261B3EE9DA0056DAD5 /* position2.gif */,
 				842A391E1B3EA1AA0056DAD5 /* hed4.png */,
 				842A391C1B3E9F470056DAD5 /* bad5.png */,
@@ -271,6 +301,9 @@
 				8488471A1B32378C0048C5D2 /* スコアボード1.jpg in Resources */,
 				84CB22741B3C628F00A37DEA /* book5.png in Resources */,
 				842A391F1B3EA1AA0056DAD5 /* hed4.png in Resources */,
+				848395CC1B4460390039D64C /* studio1.png in Resources */,
+				848395D41B447CA30039D64C /* pencil3.png in Resources */,
+				848395D81B447D5F0039D64C /* pencil4.png in Resources */,
 				842A39111B3E95470056DAD5 /* ball.gif in Resources */,
 				846A0CEA1B300BA7001C981F /* Main.storyboard in Resources */,
 				842A391D1B3E9F470056DAD5 /* bad5.png in Resources */,
@@ -279,12 +312,18 @@
 				846A0CEF1B300BA7001C981F /* LaunchScreen.xib in Resources */,
 				84AFAE631B32C5CE0009E99C /* scorenyuuryoku.png in Resources */,
 				842A39271B3EE9DA0056DAD5 /* position2.gif in Resources */,
+				848395DA1B447D5F0039D64C /* pencil6.png in Resources */,
+				848395D31B447CA30039D64C /* pencil1.gif in Resources */,
 				84AFAE651B32C9500009E99C /* sensyurogo.png in Resources */,
+				84ED18641B42599400710D26 /* scorebord_kaisetu.png in Resources */,
 				846A0CEC1B300BA7001C981F /* Images.xcassets in Resources */,
 				8488471E1B3240180048C5D2 /* ボール2.png in Resources */,
+				848395D01B447BAB0039D64C /* saveButton.png in Resources */,
+				848395CE1B447B1C0039D64C /* loadButton.png in Resources */,
 				842A390F1B3E94FF0056DAD5 /* player4.png in Resources */,
 				842A39191B3E97CF0056DAD5 /* bad2.png in Resources */,
 				84F2FAF71B32B33E006B257A /* Book.png in Resources */,
+				848395D91B447D5F0039D64C /* pencil5.png in Resources */,
 				84F2FAFD1B32B900006B257A /* you3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +348,7 @@
 				84ACFE3F1B3A7DB8006EC2A8 /* TableView.swift in Sources */,
 				846A0CE71B300BA7001C981F /* ViewController.swift in Sources */,
 				848545F31B36593B00148547 /* ViewController2.swift in Sources */,
+				848395CA1B443BC10039D64C /* RootViewController.swift in Sources */,
 				846A0CE51B300BA7001C981F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

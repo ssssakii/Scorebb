@@ -8,14 +8,43 @@
 
 import UIKit
 
-class ViewController2:UIViewController //,UIPickerViewDelegate
+class ViewController2:UIViewController, UIPickerViewDelegate, UITextFieldDelegate //,UIPickerViewDelegate
 {
+    
+    //日付入力のDatePicker
+    @IBOutlet var myDatePicker: UIDatePicker!
+    var time: String!
+    
+    
+    
+    //TextFieldとキーボードが隠れないようにするためのやつ
+    @IBOutlet weak var addScroll: UIScrollView! //スクロールビュー関連付け
+    var txtActiveField: UITextField! //編集後のtextFieldを新しく格納する変数を定義
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
         
+        //myDatePicker.backgroundColor = UIColor.whiteColor() //DatePickerの背景を白に
+        myDatePicker.addTarget(self, action: "onDidChangeDate:", forControlEvents: .ValueChanged)
+        // Delegateを設定する.
+        time = ""
+        
+        
+        
+        //TextFieldとキーボードが隠れないようにするためのやつ
+        textField2.delegate = self
+        textField3.delegate = self
+        textField4.delegate = self
+        textField5.delegate = self
+        textField6.delegate = self
+        textField7.delegate = self
+        textField8.delegate = self
+        //デリゲート設定（このdelegateは画面もしくはreturnをタップした時にキーボードを閉じる処理を扱うのに必要なもので、NSNotificationCenterを使うために必要としているものではない。）
+        
+    }
+    
         
         
         /////////////////
@@ -60,6 +89,21 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
         self.view.addSubview(textField8)
     
     */
+    
+    /////////////////////
+    //DatePockerについて//
+    /////////////////////
+    
+    func onDidChangeDate(sender: UIDatePicker){
+        
+        // フォーマットを生成.
+        let myDateFormatter: NSDateFormatter = NSDateFormatter()
+        myDateFormatter.dateFormat = "yyyy/MM/dd hh:mm"
+        
+        // 日付をフォーマットに則って取得.
+        let mySelectedDate: NSString = myDateFormatter.stringFromDate(sender.date)
+        time = mySelectedDate as String
+        //myLabel.text = "発車時刻：\(time)"
     }
     
     
@@ -85,7 +129,7 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
     
     
     
-    @IBOutlet weak var textField1: UITextField!
+    //@IBOutlet weak var textField1: UITextField!
     
     //textField1に打ち込んだ文字をLabel1に表示させる
     //@IBAction func enter1(sender: UITextField) {
@@ -113,7 +157,7 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
     
     @IBOutlet weak var textField6: UITextField!
     @IBOutlet weak var textField7: UITextField!
-    //@IBOutlet weak var textField8: UITextField!
+    @IBOutlet weak var textField8: UITextField!
     
     
     
@@ -129,17 +173,93 @@ class ViewController2:UIViewController //,UIPickerViewDelegate
         let userDefaults = NSUserDefaults.standardUserDefaults()
         
         // キー: "saveText" , 値: "" を格納。（idは任意）
-        userDefaults.setObject(textField1.text, forKey: "label1")
+        userDefaults.setObject(time, forKey: "label1")
         userDefaults.setObject(textField2.text, forKey: "label2")
         userDefaults.setObject(textField3.text, forKey: "label3")
         userDefaults.setObject(textField4.text, forKey: "label4")
         userDefaults.setObject(textField5.text, forKey: "label5")
         userDefaults.setObject(textField6.text, forKey: "label6")
         userDefaults.setObject(textField7.text, forKey: "label7")
-        //userDefaults.setObject(textField8.text, forKey: "label8")
+        userDefaults.setObject(textField8.text, forKey: "label8")
         
     }
     
+    
+    
+    // Viewが画面に表示される度に呼ばれるメソッド
+    override func viewWillAppear(animated: Bool) {
+        // NSNotificationCenterへの登録処理
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserver(self, selector: "handleKeyboardWillShowNotification:", name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.addObserver(self, selector: "handleKeyboardWillHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
+    }
+    // Viewが非表示になるたびに呼び出されるメソッド
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        // NSNotificationCenterの解除処理
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+    }
+    //画面がタップされた際にキーボードを閉じる処理
+    func tapGesture(sender: UITapGestureRecognizer) {
+        textField2.resignFirstResponder()
+        textField3.resignFirstResponder()
+        textField4.resignFirstResponder()
+        textField5.resignFirstResponder()
+        textField6.resignFirstResponder()
+        textField7.resignFirstResponder()
+        textField8.resignFirstResponder()
+        
+    }
+    //キーボードのreturnが押された際にキーボードを閉じる処理
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField2.resignFirstResponder()
+        textField3.resignFirstResponder()
+        textField4.resignFirstResponder()
+        textField5.resignFirstResponder()
+        textField6.resignFirstResponder()
+        textField7.resignFirstResponder()
+        textField8.resignFirstResponder()
+        
+        //itemMemo.resignFirstResponder()
+        return true
+    }
+    //textFieldを編集する際に行われる処理
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        txtActiveField = textField //　編集しているtextFieldを新しいtextField型の変数に代入する
+        return true
+    }
+    
+    //キーボードが表示された時
+    func handleKeyboardWillShowNotification(notification: NSNotification) {
+        //郵便入れみたいなもの
+        let userInfo = notification.userInfo!
+        //キーボードの大きさを取得
+        let keyboardRect = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        // 画面のサイズを取得
+        let myBoundSize: CGSize = UIScreen.mainScreen().bounds.size
+        //　ViewControllerを基準にtextFieldの下辺までの距離を取得
+        var txtLimit = txtActiveField.frame.origin.y + txtActiveField.frame.height + 8.0
+        // ViewControllerの高さからキーボードの高さを引いた差分を取得
+        let kbdLimit = myBoundSize.height - keyboardRect.size.height
+        
+        // こうすることで高さを確認できる（なくてもいい）
+        println("テキストフィールドの下辺：(\(txtLimit))")
+        println("キーボードの上辺：(\(kbdLimit))")
+        
+        //スクロールビューの移動距離設定
+        if txtLimit >= kbdLimit {
+            addScroll.contentOffset.y = txtLimit - kbdLimit
+        }
+    }
+    
+    //ずらした分を戻す処理
+    func handleKeyboardWillHideNotification(notification: NSNotification) {
+        addScroll.contentOffset.y = 0
+    }
+
     
     
     

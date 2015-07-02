@@ -84,6 +84,19 @@ class SubTableView: UIViewController {
     }
     */
     
+    // NSUserDefaultsインスタンスの生成
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+    
+    /*
+    var loadText1 : String! = userDefaults.stringForKey("label1")
+    var loadText2 : String! = userDefaults.stringForKey("label2")
+    var loadText3 : String! = userDefaults.stringForKey("label3")
+    var loadText4 : String! = userDefaults.stringForKey("label4")
+    var loadText5 : String! = userDefaults.stringForKey("label5")
+    var loadText6 : String! = userDefaults.stringForKey("label6")
+    var loadText7 : String! = userDefaults.stringForKey("label7")
+    var loadText8 : String! = userDefaults.stringForKey("label8")
+*/
     
     ///////////////////////
     //loadボタンのアクション//
@@ -92,9 +105,10 @@ class SubTableView: UIViewController {
         // データ読み込み処理
         
         // NSUserDefaultsインスタンスの生成
-        let userDefaults = NSUserDefaults.standardUserDefaults()
+        //let userDefaults = NSUserDefaults.standardUserDefaults()
         
         // キーが"saveText"のStringをとります。
+        
         var loadText1 : String! = userDefaults.stringForKey("label1")
         var loadText2 : String! = userDefaults.stringForKey("label2")
         var loadText3 : String! = userDefaults.stringForKey("label3")
@@ -103,7 +117,7 @@ class SubTableView: UIViewController {
         var loadText6 : String! = userDefaults.stringForKey("label6")
         var loadText7 : String! = userDefaults.stringForKey("label7")
         var loadText8 : String! = userDefaults.stringForKey("label8")
-        
+    
         
         // labelに表示
         label1.text = loadText1
@@ -115,6 +129,52 @@ class SubTableView: UIViewController {
         label7.text = loadText7
         label8.text = loadText8
         
+        
+        // matomeとしてloadTextをまとめる
+        var matome : String!
+        matome = loadText1 + loadText2 + loadText3 + loadText4 + loadText5 + loadText6 + loadText7
+        
+        /*
+        //////////
+        //String//
+        //////////
+        
+        //保存
+        NSUserDefaults.standardUserDefaults().setObject(matome, forKey:"hogeKey");
+        NSUserDefaults.standardUserDefaults().synchronize();
+        // println(matome)
+        
+        //読み込み
+        let obj: AnyObject! = NSUserDefaults.standardUserDefaults().objectForKey("hogeKey");
+        println(obj);//matome
+        
+        
+        ////////
+        //Arry//
+        ////////
+        
+        
+        //保存
+        let jumpArr = ["loadText1","loadText2","loadText3","loadText4","loadText5","loadText6","loadText7"]
+        NSUserDefaults.standardUserDefaults().setObject(jumpArr, forKey:"hogeDic");
+        NSUserDefaults.standardUserDefaults().synchronize();
+        
+        
+        
+        //読み込み（パターン1) object型で読み混み
+        let arr: AnyObject! = NSUserDefaults.standardUserDefaults().arrayForKey("hogeDic");
+        println(arr);
+        // loadText1,loadText2,loadText3,loadText4,loadText5,loadText6,loadText7
+    */
+    
+        
+    
+
+    }
+    
+    /*
+    
+    @IBAction func Sample(){
         // matomeとしてloadTextをまとめる
         var matome : String!
         matome = loadText1 + loadText2 + loadText3 + loadText4 + loadText5 + loadText6 + loadText7
@@ -138,20 +198,22 @@ class SubTableView: UIViewController {
         //Arry//
         ////////
         
+        
         //保存
         let jumpArr = ["loadText1","loadText2","loadText3","loadText4","loadText5","loadText6","loadText7"]
         NSUserDefaults.standardUserDefaults().setObject(jumpArr, forKey:"hogeDic");
         NSUserDefaults.standardUserDefaults().synchronize();
+        
+        
         
         //読み込み（パターン1) object型で読み混み
         let arr: AnyObject! = NSUserDefaults.standardUserDefaults().arrayForKey("hogeDic");
         println(arr);
         // loadText1,loadText2,loadText3,loadText4,loadText5,loadText6,loadText7
 
-        
-    
 
     }
+*/
     
     
     //////////////////////
